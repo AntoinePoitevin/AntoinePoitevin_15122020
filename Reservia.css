@@ -1,0 +1,48 @@
+#nav
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 20px; /* hauteur du texte des rubriques */
+}
+
+#logo
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    float: left;
+    padding-top: 10px; /* hauteur du logo */
+}
+
+.rubrique
+{
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 50px;
+    color: grey;
+}
+.rubrique:hover
+{
+    border-top: 3px #0065fc solid;
+    padding-top: 20px;
+    color: #0065fc;
+}
+.inscription
+{
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: 50px;
+    color: #0065fc;
+    font-weight: bold; 
+}
+a
+{ 
+ text-decoration:none; 
+    color: grey;
+} 
+
+@media all and (max-device-width: 480px)/* css pour mobile */
+{
+
+}
