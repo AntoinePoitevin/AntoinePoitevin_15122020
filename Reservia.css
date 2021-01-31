@@ -3,7 +3,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    padding-top: 20px; /* hauteur du texte des rubriques */
+    padding-top: 30px; /* hauteur du texte des rubriques */
 }
 
 #logo
@@ -12,7 +12,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     float: left;
-    padding-top: 10px; /* hauteur du logo */
+    margin-left: 15px;
+    padding-top: 15px; /* hauteur du logo */
 }
 
 .rubrique
@@ -20,13 +21,14 @@
     padding-right: 12px;
     padding-left: 12px;
     margin-right: 50px;
-    color: grey;
+    color: black;
 }
 .rubrique:hover
 {
-    border-top: 3px #0065fc solid;
-    padding-top: 20px;
+    border-top: 1px #0065fc solid;
+    padding-top: 30px;
     color: #0065fc;
+    font-weight: bold; 
 }
 .inscription
 {
@@ -38,11 +40,97 @@
 }
 a
 { 
- text-decoration:none; 
-    color: grey;
+    text-decoration:none; 
+}
+.presentation
+{
+    font-size: 1.3em; 
+    font-weight: bold;
+    margin-left: 14px;
+}  
+.souspresentation
+{
+    margin-left: 16px;
+}
+.rechercher
+{
+    margin-left: 16px;
+    display: flex;
+}
+.boutonrecherche
+{
+    color: white;
+    background-color: #0065fc; 
+    border-radius: 0px 10px 10px 0px;
+    border: 1px white solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: -5px;
+} 
+.boutonrecherche:hover
+{
+    color: #0065fc;
+    background-color: #b7b7b7ff;
+    font-weight: bold;
+}
+.zonerecherche
+{
+    border: 1px white solid;
 } 
 
 @media all and (max-device-width: 480px)/* css pour mobile */
 {
 
+}
+.logosearch
+{
+    width: 2%;
+    height: auto;
+    border-radius: 10px 0px 0px 10px;
+}
+.image
+{
+    width: 2%;
+    height: 2%;
+    vertical-align: middle;
+}
+.i
+{
+    margin-left: 14px;
+}
+.filtres
+{
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.filtre
+{
+    display: flex;
+    align-items: center; /*centrer le texte des filtres*/
+    margin-right: 10rem; /* espace de séparation entre chaque filtre*/
+    margin-left: 3rem;
+    border: 2px solid #b7b7b7ff;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.filtre:hover
+{
+    background-color: #b7b7b7ff;
+    color: #0065fc;
+    font-weight: bold;
+}
+.logofiltre
+{
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center; /* centrer verticalement le logo du bouton du filtre*/
+    justify-content: center; /*centrer horizontalement le logo du bouton du filtre*/
+    margin: -2px; /* coller le curseur à son conteneur */ 
+    color: #0065fc; /*couleur du logo du bouton du filtre*/
 }
