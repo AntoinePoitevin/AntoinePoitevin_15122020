@@ -38,6 +38,10 @@
     color: #0065fc;
     font-weight: bold; 
 }
+.inscription:hover
+{
+    color:  #DEEBFF; 
+}
 a
 { 
     text-decoration:none; 
@@ -70,7 +74,7 @@ a
 .boutonrecherche:hover
 {
     color: #0065fc;
-    background-color: #b7b7b7ff;
+    background-color: #d9d9d9;
     font-weight: bold;
 }
 .zonerecherche
@@ -109,17 +113,18 @@ a
 {
     display: flex;
     align-items: center; /*centrer le texte des filtres*/
-    margin-right: 10rem; /* espace de séparation entre chaque filtre*/
+    margin-right: 2,5rem; /* espace de séparation entre chaque filtre*/
+    padding-right: 5px;
     margin-left: 3rem;
-    border: 2px solid #b7b7b7ff;
+    border: 2px solid  #d9d9d9;
     border-radius: 2rem;
     cursor: pointer;
     font-weight: bold;
 }
 .filtre:hover
 {
-    background-color: #b7b7b7ff;
-    color: #0065fc;
+    background-color:  #d9d9d9;
+    color:  #0065fc;
     font-weight: bold;
 }
 .logofiltre
@@ -133,4 +138,98 @@ a
     justify-content: center; /*centrer horizontalement le logo du bouton du filtre*/
     margin: -2px; /* coller le curseur à son conteneur */ 
     color: #0065fc; /*couleur du logo du bouton du filtre*/
+}
+.hebergement
+{
+    display: flex;
+}
+.marseille
+{
+    background-color:  #d9d9d9;   
+    padding: 5px;
+    margin-left: 14px;
+    width: 45%;
+    border-radius: 10px 10px 10px 10px;
+}
+.populaire
+{
+    background-color:  #d9d9d9;    
+    padding: 5px;
+    margin-left: 30px;
+    width: 25%;
+    border-radius: 10px 10px 10px 10px;    
+}
+.hebergementitre
+{
+    font-size: 1.3em; 
+    font-weight: bold;
+    margin-left: 14px;    
+}
+.imghebergement
+{
+    width: 180px;
+    height: 120px;
+    border-radius: 10px 10px 0px 0px;
+}
+.blancimage
+{
+    background-color: white;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px; 
+    border-radius: 10px 10px 10px 10px;
+}
+
+.titreimage
+{
+    font-size: 1em; 
+    font-weight: bold;
+}
+.ligne
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.more
+{
+    font-weight: bold;
+    margin-left: 14px;
+}
+
+.etoile [data-active=true]
+{
+    color: #0065FC;    
+}
+.etoile [data-active=false]
+{
+    color: #d9d9d9;
+}
+.blancimagepop
+{
+    display: flex;
+    background-color: white;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px; 
+    padding-bottom: 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+.colonne
+{
+    display: flex;
+    flex-direction: column;
+}
+.imgpopulaire
+{   
+    width: 140px;
+    height: 140px;
+    border-radius: 10px 0px 0px 10px;
+    padding-right: 10px;
+}
+.titreimagepopulaire
+{
+    font-size: 1em; 
+    font-weight: bold;
 }
