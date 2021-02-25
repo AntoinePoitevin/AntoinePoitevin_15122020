@@ -32,7 +32,7 @@ body
     border-top: 1px #0065fc solid;
     padding-top: 23px;
     color: #0065fc;
-    font-weight: bold; 
+
 }
 .inscription
 {
@@ -44,7 +44,7 @@ body
 }
 .inscription:hover
 {
-    color:  #DEEBFF; 
+    color:  #DEEBFF;
 }
 a
 { 
@@ -74,6 +74,7 @@ a
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: -5px;
+    cursor: pointer;
 } 
 .boutonrecherche:hover
 {
@@ -129,7 +130,7 @@ a
 {
     background-color:  #d9d9d9;
     color:  #0065fc;
-    font-weight: bold;
+    transform: scale(1.07);
 }
 .logofiltre
 {
@@ -167,16 +168,73 @@ a
 {
     font-size: 1.3em; 
     font-weight: bold;
+    margin-left: 20px; 
+    margin-top: 31px;  
+}
+.hebergementitrepopulaire
+{
+    font-size: 1.3em; 
+    font-weight: bold;
     margin-left: 20px;   
 }
-.imghebergement
+.imghebergement1
 {
+    background-image: url('images/hebergements/3_medium/p1.jpg');
+    background-size: cover;
     width: 180px;
     height: 120px;
     border-radius: 10px 10px 0px 0px;
 }
+
+.imghebergement2
+{
+    background-image: url('images/hebergements/3_medium/h2.jpg');
+    background-size: cover;
+    width: 180px;
+    height: 120px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.imghebergement3
+{
+    background-image: url('images/hebergements/3_medium/p3.jpg');
+    background-size: cover;
+    width: 180px;
+    height: 120px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.imghebergement4
+{
+    background-image: url('images/hebergements/3_medium/h1.jpg');
+    background-size: cover;
+    width: 180px;
+    height: 120px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.imghebergement5
+{
+    background-image: url('images/hebergements/3_medium/h5.jpg');
+    background-size: cover;
+    width: 180px;
+    height: 120px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.imghebergement6
+{
+    background-image: url('images/hebergements/3_medium/h4.jpg');
+    background-size: cover;
+    width: 180px;
+    height: 120px;
+    border-radius: 10px 10px 0px 0px;
+}
+
 .blancimage
 {
+    display: flex;
+    flex-direction: column;   
     background-color: white;
     padding-top: 5px;
     padding-right: 5px;
@@ -184,11 +242,17 @@ a
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 6px 12px grey;
 }
+.blancimage:hover
+{
+    transform: scale(1.02);
+}
 
 .titreimage
 {
     font-size: 1em; 
     font-weight: bold;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 .ligne
 {
@@ -201,15 +265,35 @@ a
     font-weight: bold;
     margin-left: 20px;
 }
-
-.etoile [data-active=true]
+.prixmarseille
+{
+    padding-left: 10px;
+}
+.etoilemarseille
+{
+    padding-left: 10px;
+}
+.etoilemarseille [data-active=true]
 {
     color: #0065FC;    
 }
-.etoile [data-active=false]
+.etoilemarseille [data-active=false]
 {
     color: #d9d9d9;
 }
+.etoilepopulaire
+{
+    padding-left: 10px;
+}
+.etoilepopulaire [data-active=true]
+{
+    color: #0065FC;
+}
+.etoilepopulaire [data-active=false]
+{
+    color: #d9d9d9;
+}
+
 .blancimagepop
 {
     display: flex;
@@ -222,22 +306,55 @@ a
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 6px 12px grey;
 }
+.blancimagepop:hover
+{
+    transform: scale(1.02);
+}
 .colonne
 {
     display: flex;
     flex-direction: column;
 }
-.imgpopulaire
+.imgpopulaire1
 {   
-    width: 140px;
+    background-image: url('images/hebergements/3_medium/p2.jpg');
+    background-size: cover;
+    width: 120px;
     height: 140px;
     border-radius: 10px 0px 0px 10px;
     padding-right: 10px;
 }
+
+.imgpopulaire2
+{   
+    background-image: url('images/hebergements/3_medium/h6.jpg');
+    background-size: cover;
+    width: 120px;
+    height: 140px;
+    border-radius: 10px 0px 0px 10px;
+    padding-right: 10px;
+}
+
+.imgpopulaire3
+{   
+    background-image: url('images/hebergements/3_medium/h3.jpg');
+    background-size: cover;
+    width: 120px;
+    height: 140px;
+    border-radius: 10px 0px 0px 10px;
+    padding-right: 10px;
+}
+
 .titreimagepopulaire
 {
+    padding-left: 15px;
     font-size: 1em; 
     font-weight: bold;
+}
+.prixpopulaire
+{
+    padding-left: 15px;
+    padding-top: 10px;
 }
 .titreactivite
 {
@@ -257,10 +374,17 @@ a
     display: flex;
     flex-direction: column;
 }
+
+.titreimageactivite
+{
+    padding: 10px;
+    font-size: 1em; 
+    font-weight: bold;
+}
 .blancactivitegrand
 {
 
-    width: 263px;
+    width: auto;
     height: auto;
     border-radius: 10px 10px 10px 10px;
     padding: 0px;
@@ -268,10 +392,15 @@ a
     box-shadow: 0px 6px 12px grey;
     padding-bottom: 15px;
 }
+.blancactivitegrand:hover
+{
+    transform: scale(1.02);
+}
+
 .blancactivitepetit
 {
 
-    width: 263px;
+    width: auto;
     height: auto;
     border-radius: 10px 10px 10px 10px;
     margin-left: 30px;
@@ -282,14 +411,19 @@ a
     margin-bottom: 30px;
     padding-bottom: 15px;
 }
+.blancactivitepetit:hover
+{
+    transform: scale(1.02);
+}
 .imgactivite1
 {
     background-image: url('images/activites/4_small/a1.jpg');
     background-size: cover;
     width: 263px;
-    height: 314px;
+    height: 334px;
     border-radius: 10px 10px 0px 0px;
 }
+
 .imgactivite2
 {
     background-image: url('images/activites/4_small/a2.jpg');
@@ -298,6 +432,7 @@ a
     height: 150px;
     border-radius: 10px 10px 0px 0px;
 }
+
 .imgactivite3
 {
     background-image: url('images/activites/4_small/a3.jpg');
@@ -306,14 +441,16 @@ a
     height: 100px;
     border-radius: 10px 10px 0px 0px;
 }
+
 .imgactivite4
 {
     background-image: url('images/activites/4_small/a4.jpg');
     background-size: cover;
     width: 263px;
-    height: 314px;
+    height: 334px;
     border-radius: 10px 10px 0px 0px;
 }
+
 .imgactivite5
 {
     background-image: url('images/activites/4_small/a5.jpg');
@@ -322,6 +459,7 @@ a
     height: 100px;
     border-radius: 10px 10px 0px 0px;
 }
+
 .imgactivite6
 {
     background-image: url('images/activites/4_small/a6.jpg');
@@ -330,6 +468,7 @@ a
     height: 150px;
     border-radius: 10px 10px 0px 0px;
 }
+
 footer
 {
     width: 100%;
@@ -347,7 +486,7 @@ footer
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-right: 300px;
+    padding-right: 300px;
 }
 .titrefooter
 {
@@ -357,5 +496,11 @@ footer
 }
 .textfooter
 {
-padding-bottom: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    padding-right: 50px
+}
+.textfooter:hover
+{
+    color: #0065fc;
 }
